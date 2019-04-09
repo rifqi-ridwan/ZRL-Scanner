@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
+	"sap/ndc/BarcodeScanner",
 	"sap/m/MessageBox"
-], function (Controller, MessageBox) {
+], function (Controller, BarcodeScanner,MessageBox) {
 	"use strict";
 
 	return Controller.extend("rfq.apps.barcodeScanner.controller.View1", {

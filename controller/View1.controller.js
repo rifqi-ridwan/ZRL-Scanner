@@ -11,6 +11,7 @@ sap.ui.define([
 
 		onPress: function () {
 			var currView = this.getView();
+			var test = 'check';
 			sap.ndc.BarcodeScanner.scan(
 				function (mResult) {
 					var textbox = currView.byId('inpt_valuescn');

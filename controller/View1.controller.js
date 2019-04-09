@@ -11,7 +11,7 @@ sap.ui.define([
 
 		onPress: function () {
 			var currView = this.getView();
-			cordova.plugins.BarcodeScanner.scan(
+			sap.ndc.BarcodeScanner.scan(
 				function (mResult) {
 					var textbox = currView.byId('inpt_valuescn');
 					textbox.setValue(mResult.text);

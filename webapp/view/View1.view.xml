@@ -1,0 +1,15 @@
+<mvc:View xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:ndc="sap.ndc" xmlns="sap.m" controllerName="rfq.apps.barcodeScanner.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Input xmlns="sap.m" class="sapUiLargeMarginBegin sapUiSmallMarginEnd" id="inpt_valuescn" width="60%" placeholder="Value Here" editable="false"/>
+						<Button text="Scan" press="onPress" icon="sap-icon://bar-code" id="btn_scan" width="20%"/>
+						<!--<ndc:BarcodeScannerButton scanSuccess="onScanSuccess" provideFallback="false"/>-->
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

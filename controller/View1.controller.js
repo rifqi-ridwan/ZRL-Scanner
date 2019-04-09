@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/m/MessageBox"
-], function (Controller, MessageBox) {
+	"sap/m/MessageBox",
+	"sap/ndc/BarcodeScanner"
+], function (Controller, BarcodeScanner,MessageBox) {
 	"use strict";
 
 	return Controller.extend("rfq.apps.barcodeScanner.controller.View1", {
@@ -12,7 +13,7 @@ sap.ui.define([
 		onPress: function () {
 			var currView = this.getView();
 			var test = 'check';
-			sap.ndc.BarcodeScanner.scan(
+			BarcodeScanner.scan(
 				function (mResult) {
 					var textbox = currView.byId('inpt_valuescn');
 					textbox.setValue(mResult.text);
